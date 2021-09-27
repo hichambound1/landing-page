@@ -36,3 +36,79 @@
     margin: 50px;
 
 }
+
+
+
+
+/* ------------------------ othmane -------------------- */
+
+header .logo{
+    font-size: 29px;
+    color: #026451;
+    font-weight: 400;
+}
+
+header .navList a{
+    color: #0E0E0E !important;
+}
+
+header .hero h1{
+    font-size: 80px;
+    color: #0F393B;
+}
+header .shape1{
+    position: absolute;
+    left: 0;
+    height: 100vh;
+}
+header .img-hero{
+    position: relative;
+    top: 0px;
+}
+header .galssmorphizme{
+    width: 100%;
+    padding: 20px 40px ;
+    position: relative;
+
+    
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 28px );
+    -webkit-backdrop-filter: blur( 28px );
+    border: 2px solid rgba( 255, 255, 255, 0.6 );
+
+    border-radius: 25px;
+}
+
+.hero .hero-title{
+    margin: 85px 0;
+}
+.hero .galssmorphizme .navbar{
+    border-bottom: 2px solid rgba( 255, 255, 255, 0.2 );
+}
+
+.hero .galssmorphizme .navbar a{
+    font-size:  20px;
+    margin-left: 40px;
+}
+.hero .galssmorphizme .navbar .active{
+    border-bottom: 2px solid rgba(206, 52, 52, 0.6);
+}
+
+.hero .row-content{
+    margin-top: 50px;
+}
+.hero .row-content h3{
+    color: #026451;
+    font-size: 25px;
+}
+.hero .row-content p{
+    color: #A2A2A2;
+    margin-right: 35px;
+}
+
+.hero .row-content .search-btn img{
+    padding: 30px;
+    background-color: #FF6500;
+    border-radius: 22px;
+    float: left;
+}
