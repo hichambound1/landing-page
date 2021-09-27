@@ -112,3 +112,15 @@ header .galssmorphizme{
     border-radius: 22px;
     float: left;
 }
+
+
+
+footer{
+    background-color: #026451;
+}
+
+@media (max-width: 600px) {
+      .partners .logos-partnner img{
+          padding:0px 50px;
+      }  
+}
