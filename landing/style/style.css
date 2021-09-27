@@ -23,3 +23,16 @@
     border-radius: 22px;
     padding: 5px;
 }
+.app{
+    background-color: #026451;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.svgapp{
+    position: relative;
+    bottom: 0px;
+    top: 50px;
+    margin: 50px;
+
+}
