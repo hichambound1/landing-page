@@ -1,0 +1,19 @@
+.text-green{
+    color: #026451;
+}
+
+.whyus .card-hover{
+    width: 250px;
+    margin: auto;
+    
+}
+.choise-place .choise-place-item{
+    position: relative;
+}
+.choise-place .button-link{
+    position: absolute;
+    bottom: 2px;
+    width: 90%;
+    border-radius: 22px;
+    padding: 5px;
+}
