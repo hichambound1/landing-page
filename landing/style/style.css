@@ -30,11 +30,9 @@
     
 }
 .svgapp{
-    position: relative;
-    bottom: 0px;
-    top: 50px;
-    margin: 50px;
-
+    height: 600px;
+    margin-top: 50px;
+    float: left;
 }
 
 
@@ -50,6 +48,7 @@ header .logo{
 
 header .navList a{
     color: #0E0E0E !important;
+    padding: 8px 16px !important;
 }
 
 header .hero h1{
@@ -107,13 +106,21 @@ header .galssmorphizme{
 }
 
 .hero .row-content .search-btn img{
-    padding: 30px;
+    padding: 25px;
     background-color: #FF6500;
     border-radius: 22px;
     float: left;
 }
 
 
+.ourApp h2{
+    font-size: 50px;
+    margin-bottom: 40px !important;
+}
+.ourApp h4{
+    font-size: 31px;
+    margin-bottom: 100px !important;
+}
 
 footer{
     background-color: #026451;
