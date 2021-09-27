@@ -7,8 +7,14 @@
     margin: auto;
     
 }
+
 .choise-place .choise-place-item{
     position: relative;
+    margin:12px 0px;
+}
+.img-back{
+    position: absolute;
+    
 }
 .choise-place .button-link{
     position: absolute;
