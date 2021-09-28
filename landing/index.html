@@ -7,6 +7,10 @@
     <title>home</title>
     <link rel="stylesheet" href="style/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
 </head>
 <body>
     <!-- header -->
@@ -219,6 +223,61 @@
     <!-- end choise a place you want -->
     <!-- caroussel -->
     <section >
+        <!-- <div class="center-slide-categories">
+            
+                <div class="center-slide-categorie">
+                    <img src="image/chi-m-R1uiDu8vBh0-unsplash.png" alt="">
+                </div>
+
+                <div class="center-slide-categorie">
+                    <img src="image/chi-m-R1uiDu8vBh0-unsplash.png" alt="">
+                </div>
+
+                <div class="center-slide-categorie">
+                    <img src="image/chi-m-R1uiDu8vBh0-unsplash.png" alt="">
+                </div>
+
+                <div class="center-slide-categorie">
+                    <img src="image/chi-m-R1uiDu8vBh0-unsplash.png" alt="">
+                </div>
+
+                <div class="center-slide-categorie">
+                    <img src="image/chi-m-R1uiDu8vBh0-unsplash.png" alt="">
+                </div>
+
+                <div class="center-slide-categorie">
+                    <img src="image/chi-m-R1uiDu8vBh0-unsplash.png" alt="">
+                </div>
+
+        </div> -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="image/bruce-mars-ieIY61ZHhs8-unsplash.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="image/mesut-kaya-eOcyhe5-9sQ-unsplash.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="image/product-school-Lo2SauLBP7g-unsplash.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
         <div class="caroussel">
 
         </div>
@@ -356,5 +415,19 @@
  
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $('.center-slide-categories').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 4,
+        autoplay: true,
+        
+      });
+      </script>
+
+
 </body>
 </html>
