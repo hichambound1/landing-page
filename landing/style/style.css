@@ -58,7 +58,7 @@ header .hero h1{
 header .shape1{
     position: absolute;
     left: 0;
-    height: 100vh;
+    height: 100%;
 }
 header .img-hero{
     position: relative;
