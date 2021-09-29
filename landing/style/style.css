@@ -76,6 +76,8 @@ header .galssmorphizme{
     border: 2px solid rgba( 255, 255, 255, 0.6 );
 
     border-radius: 25px;
+
+    overflow: hidden;
 }
 
 .hero .hero-title{
