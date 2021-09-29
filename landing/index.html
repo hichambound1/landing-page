@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 
 </head>
 <body>
@@ -62,20 +64,21 @@
                     <nav class="navbar navbar-expand-lg navbar-light p-0">
                         <ul class="navbar-nav p-0">
                             <li class="nav-item">
-                                <a class="nav-link " href="#">طيران</a>
+                                <a class="nav-link tablink " onclick="openCity(event, 'a1');" href="#">طيران</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">سيارات</a>
+                                <a class="nav-link tablink " onclick="openCity(event, 'a2');" href="#">سيارات</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="#">فنادق</a>
+                                <a class="nav-link tablink " onclick="openCity(event, 'a3');" href="#">فنادق</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">أنشطة أخرى</a>
+                                <a class="nav-link tablink active" onclick="openCity(event, 'a4');" href="#">أنشطة أخرى</a>
                             </li>
                         </ul>
                     </nav>
-                    <div class="row-content row">
+
+                    <div id="a1" class="row-content row city w3-animate-right" style="display:none">
                         <div class="col">
                             <h3> <img src="image/Iconly-Bold-Send.png" alt=""> الوجهة</h3>
                             <p>إلى اين تريد الذهاب؟</p>
@@ -92,6 +95,86 @@
                             <a href="" class="search-btn"><img src="image/Iconly-Light-Outline-Search.png" alt=""></a>
                         </div>
                     </div>
+
+                    <div id="a2" class="row-content row city w3-animate-right" style="display:none">
+                        <div class="col">
+                            <h3> <img src="image/Iconly-Bold-Send.png" alt=""> الوجهة</h3>
+                            <p>إلى اين تريد الذهاب؟</p>
+                        </div>
+                        <div class="col">
+                            <h3> <img src="image/Iconly-Bold-Calendar.png" alt=""> الموعد</h3>
+                            <p>أضف موعد محدد</p>
+                        </div>
+                        
+                        <div class="col">
+                            <h3> <img src="image/Iconly-Bold-Calendar.png" alt=""> الموعد</h3>
+                            <p>أضف موعد محدد</p>
+                        </div>
+                        
+                        <div class="col">
+                            <h3> <img src="image/Iconly-Bold-Calendar.png" alt=""> الموعد</h3>
+                            <p>أضف موعد محدد</p>
+                        </div>
+                    </div>
+
+                    <div id="a3" class="row-content row city w3-animate-right" style="display:none">
+                        <div class="col">
+                            <h3> <img src="image/Iconly-Bold-Send.png" alt=""> الوجهة</h3>
+                            <p>إلى اين تريد الذهاب؟</p>
+                        </div>
+                        <div class="col">
+                            <h3> <img src="image/Iconly-Bold-Calendar.png" alt=""> الموعد</h3>
+                            <p>أضف موعد محدد</p>
+                        </div>
+                        
+                        <div class="col">
+                            <h3> <img src="image/Iconly-Bold-Calendar.png" alt=""> الموعد</h3>
+                            <p>أضف موعد محدد</p>
+                        </div>
+                        
+                        <div class="col">
+                            <h3> <img src="image/Iconly-Bold-Calendar.png" alt=""> الموعد</h3>
+                            <p>أضف موعد محدد</p>
+                        </div>
+                    </div>
+
+                    <div id="a4" class="row-content row city w3-animate-right">
+                        <div class="col">
+                            <h3> <img src="image/Iconly-Bold-Send.png" alt=""> الوجهة</h3>
+                            <p>إلى اين تريد الذهاب؟</p>
+                        </div>
+                        <div class="col">
+                            <h3> <img src="image/Iconly-Bold-Calendar.png" alt=""> الموعد</h3>
+                            <p>أضف موعد محدد</p>
+                        </div>
+                        <div class="col">
+                            <h3> <img src="image/Iconly-Bold-Wallet.png" alt=""> الميزانية</h3>
+                            <p>كم تريد ان تدفع؟</p>
+                        </div>
+                        <div class="col-1">
+                            <a href="" class="search-btn"><img src="image/Iconly-Light-Outline-Search.png" alt=""></a>
+                        </div>
+                    </div>
+
+                    
+
+                    <script>
+                        function openCity(evt, contentName) {
+                          var i, x, tablinks;
+                          x = document.getElementsByClassName("city");
+                          for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                          }
+                          tablinks = document.getElementsByClassName("tablink");
+                          console.log(tablinks.length);
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+                            document.getElementById(contentName).style.display = "flex";
+                            evt.currentTarget.className += " active";
+                        }
+                    </script>
+
                 </div>
                 <!-- end galssmorphizme -->
             </div>
@@ -473,6 +556,9 @@
     
 
   
+
+
+
 
 
 </body>
