@@ -168,13 +168,13 @@ footer{
     background-image: url('https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/arrow-right.svg') !important;
 }
 
-/* @media (max-width: 600px) {
-    .carousel-item img{
-        width: 200px;display: block;margin: 0 auto;
-    } 
+@media (max-width: 600px) {
+   .app{
+       text-align: center;
+   }
    
 
-} */
+}
 @media (max-width: 900px) {
     .carousel-item img{
         width: 200px;display: block;margin: 0 auto;
@@ -185,5 +185,10 @@ footer{
     .carousel-control-prev  span {
         top: 40px;  
     } 
+    .app .appphoto{
+        width: 300px;
+        display: block;
+        margin: auto;
+    }
 
 }
